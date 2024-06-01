@@ -61,7 +61,6 @@ const Dashboard = () => {
             </Tabs>
           </div>
         </div>
-        <p>This is a sample content that will follow the theme.</p>
       </main>
       <Button colorScheme="teal" variant="solid" onClick={handleLogout}>
         Logout

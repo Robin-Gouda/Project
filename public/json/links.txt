@@ -1,0 +1,4 @@
+json-server product_inventory.json --port 3002
+json-server customer_schema.json --port 3003
+json-server sale_order.json --port 3003
+json-server auth.json --port 3006
