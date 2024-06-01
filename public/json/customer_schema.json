@@ -1,0 +1,79 @@
+{
+  "customerSchema": [
+    {
+      "id": 8,
+      "customer": 11908,
+      "customer_profile": {
+        "id": 11908,
+        "name": "Ram",
+        "color": [182, 73, 99],
+        "email": "jesus_christ@church.com",
+        "pincode": "Mumbai",
+        "location_name": "Mumbai, Maharashtra, India",
+        "type": "C",
+        "profile_pic": null,
+        "gst": ""
+      }
+    },
+    {
+      "id": 9,
+      "customer": 11909,
+      "customer_profile": {
+        "id": 11909,
+        "name": "Sam",
+        "color": [182, 73, 99],
+        "email": "jesus_christ@church.com",
+        "pincode": "Mumbai",
+        "location_name": "Mumbai, Maharashtra, India",
+        "type": "C",
+        "profile_pic": null,
+        "gst": ""
+      }
+    },
+    {
+      "id": 10,
+      "customer": 11910,
+      "customer_profile": {
+        "id": 11910,
+        "name": "Balram",
+        "color": [182, 73, 99],
+        "email": "jesus_christ@church.com",
+        "pincode": "Mumbai",
+        "location_name": "Mumbai, Maharashtra, India",
+        "type": "C",
+        "profile_pic": null,
+        "gst": ""
+      }
+    },
+    {
+      "id": 11,
+      "customer": 11911,
+      "customer_profile": {
+        "id": 11911,
+        "name": "Kalam",
+        "color": [182, 73, 99],
+        "email": "jesus_christ@church.com",
+        "pincode": "Mumbai",
+        "location_name": "Mumbai, Maharashtra, India",
+        "type": "C",
+        "profile_pic": null,
+        "gst": ""
+      }
+    },
+    {
+      "id": 12,
+      "customer": 11912,
+      "customer_profile": {
+        "id": 11912,
+        "name": "Robert",
+        "color": [182, 73, 99],
+        "email": "jesus_christ@church.com",
+        "pincode": "Mumbai",
+        "location_name": "Mumbai, Maharashtra, India",
+        "type": "C",
+        "profile_pic": null,
+        "gst": ""
+      }
+    }
+  ]
+}
