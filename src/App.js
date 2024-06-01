@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProtectedRoute from "./components/login/ProtectedRoute";
 import LoginPage from "./pages/LoginPage";
 import Dashboard from "./pages/Dashboard";
+import SaleorderForm from "./components/contents/saleorderForm";
 
 const App = () => {
   return (
@@ -14,6 +15,14 @@ const App = () => {
           element={
             <ProtectedRoute>
               <Dashboard />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/sale-order-form"
+          element={
+            <ProtectedRoute>
+              <SaleorderForm />
             </ProtectedRoute>
           }
         />

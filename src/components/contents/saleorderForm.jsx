@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Select from "react-select";
+import { useNavigate } from "react-router-dom";
+import { Button } from "@chakra-ui/react";
 // import "./css/saleorderForm.css";
 import axios from "axios";
 
 const SaleorderForm = () => {
   const [productInventory, setProductInventory] = useState([]);
   const [combined, setCombined] = useState([]);
+  const navigate = useNavigate();
   const [selectedOption, setSelectedOption] = useState([]);
   const [dataFetched, setDataFetched] = useState({
     product: false,
@@ -223,8 +226,16 @@ const SaleorderForm = () => {
               });
             })}
           </div>
-
-          <button type="submit">Submit</button>
+          <div className="buttons">
+            <button type="submit">Submit</button>
+            <Button
+              colorScheme="teal"
+              variant="solid"
+              onClick={() => navigate("/content")}
+            >
+              Close and go back
+            </Button>
+          </div>
         </form>
       </div>
     </div>

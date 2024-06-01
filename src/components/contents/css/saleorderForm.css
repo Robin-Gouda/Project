@@ -1,0 +1,138 @@
+.AddFormContainer {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 500;
+  /* background: rgb(0, 0, 0); */
+}
+
+.sale_Order_Form_Header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.sale_Order_Form_Header > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+h5 {
+  margin: 5px;
+}
+
+.two_by_two {
+  display: flex;
+  justify-content: start;
+}
+
+.two_by_two > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.sale_Order_Form_Header > div > input {
+  height: 30px;
+  border: 0.5px solid black;
+  /* outline: 1px solid black; */
+  border-radius: 5px;
+}
+
+.formToAdd {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  position: absolute;
+  right: 100px;
+  bottom: 10px;
+}
+
+.mainContainer {
+  width: 100vb;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bodyContainer {
+  margin: 25px 0 0 0;
+  width: 80vb;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid gainsboro;
+  position: relative;
+  background-color: rgb(206, 202, 206);
+}
+.dropdown {
+  height: 70vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  gap: 5px;
+}
+
+.right {
+  padding: 2px 5px;
+  background-color: rgb(224, 224, 224);
+  border-radius: 5px;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+.bottom {
+  padding-top: 20px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bleft {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.bleft > h4 {
+  margin: 5px 0;
+}
+
+.bleft > input {
+  margin: 0;
+  padding: 10px 5px 10px 5px;
+  outline: none;
+  border: 2px solid grey;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.green_element_each_item {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  padding: 2px 4px;
+  color: rgb(0, 92, 0);
+  background-color: rgb(105, 248, 119);
+  /* border: 3px soild forestgreen; */
+  border-radius: 10px;
+}

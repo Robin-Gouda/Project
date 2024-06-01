@@ -28,10 +28,24 @@ const Dashboard = () => {
     <div className={`app ${theme}`}>
       <Navbar />
       <main>
-        <h2>Dashboard</h2>
+        <div className="right">
+          <h2>Dashboard</h2>
+
+          <Button
+            size="md"
+            height="48px"
+            width="200px"
+            border="2px"
+            borderColor="green.500"
+            onClick={() => navigate("/sale-order-form")}
+          >
+            + Sale Orders
+          </Button>
+        </div>
         <div className="top">
           <div className="left">
             <Tabs variant="soft-rounded" colorScheme="green">
+              <div className=""></div>
               <TabList>
                 <Tab className="tab">Tab 1</Tab>
                 <Tab className="tab">Tab 2</Tab>
@@ -45,41 +59,6 @@ const Dashboard = () => {
                 </TabPanel>
               </TabPanels>
             </Tabs>
-          </div>
-          <div className="right">
-            <Popup
-              trigger={
-                <Button
-                  size="md"
-                  height="48px"
-                  width="200px"
-                  border="2px"
-                  borderColor="green.500"
-                >
-                  + Sale Orders
-                </Button>
-              }
-              modal
-              nested
-            >
-              {(close) => (
-                <div className="modal">
-                  <div className="content">
-                    <SaleorderForm />
-                  </div>
-                  <div>
-                    <Button
-                      colorScheme="teal"
-                      variant="solid"
-                      onClick={() => close()}
-                    >
-                      Close modal
-                    </Button>
-                  </div>
-                </div>
-              )}
-            </Popup>
-            ;
           </div>
         </div>
         <p>This is a sample content that will follow the theme.</p>
