@@ -38,6 +38,12 @@ const SaleorderForm = () => {
         setProductInventory(data);
         setDataFetched((prevState) => ({ ...prevState, product: true }));
       });
+    fetch("http://localhost:3003/customerSchema")
+      .then((response) => response.json())
+      .then((data) => {
+        setSaleOrders(data);
+        setDataFetched((prevState) => ({ ...prevState, product: true }));
+      });
   }, []);
 
   // Data is stored in combined state variable post fetching
@@ -45,7 +51,8 @@ const SaleorderForm = () => {
     if (dataFetched.product) {
       setCombined([...productInventory]);
     }
-  }, [dataFetched, productInventory]);
+    console.log(saleOrders);
+  }, [dataFetched, productInventory, saleOrders]);
 
   // adding label's for multi select
   const addFields = (arr) => {

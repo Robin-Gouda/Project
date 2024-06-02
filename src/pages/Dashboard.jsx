@@ -14,6 +14,7 @@ import {
 import "../App.css";
 import Popup from "reactjs-popup";
 import SaleorderForm from "../components/contents/saleorderForm";
+import ActiveSalesOrder from "../components/contents/activeSaleOrder";
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -47,12 +48,12 @@ const Dashboard = () => {
             <Tabs variant="soft-rounded" colorScheme="green">
               <div className=""></div>
               <TabList>
-                <Tab className="tab">Tab 1</Tab>
-                <Tab className="tab">Tab 2</Tab>
+                <Tab className="tab">Active Sales Order</Tab>
+                <Tab className="tab">Completed Sales Order</Tab>
               </TabList>
               <TabPanels>
                 <TabPanel>
-                  <p>one!</p>
+                  <ActiveSalesOrder />
                 </TabPanel>
                 <TabPanel>
                   <p>two!</p>

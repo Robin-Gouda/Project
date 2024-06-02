@@ -1,4 +1,10 @@
-json-server product_inventory.json --port 3002
-json-server customer_schema.json --port 3003
-json-server sale_order.json --port 3003
-json-server auth.json --port 3006
+To start the server in your Local machine just type the below command in your terminal / power-shell
+start command : "./start_json_servers.bat"
+
+Note : the code content in the "start_json_servers.bat" can be accessed by clicking the file 
+       it is stored in ".bat" file extension to automate the start of all 4 server end-points
+
+
+username and password are stored in json file auth.json which are
+username: user1
+password: password1   
