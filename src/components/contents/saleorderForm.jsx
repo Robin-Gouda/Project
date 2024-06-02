@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Select from "react-select";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@chakra-ui/react";
-// import "./css/saleorderForm.css";
+import "./css/saleorderForm.css";
 import axios from "axios";
 
 const SaleorderForm = () => {
@@ -233,6 +233,7 @@ const SaleorderForm = () => {
               });
             })}
           </div>
+
           <div className="buttons">
             <button type="submit">Submit</button>
             <Button

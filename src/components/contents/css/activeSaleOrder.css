@@ -1,0 +1,17 @@
+.css-1zts0j {
+  background-color: rgb(215, 254, 249);
+}
+
+.linkButton {
+  background-color: none;
+}
+
+.linkButton:hover {
+  cursor: pointer;
+}
+
+.choicelink {
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}

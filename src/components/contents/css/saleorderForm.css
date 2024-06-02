@@ -4,58 +4,19 @@
   margin: 0;
   padding: 0;
   z-index: 500;
-  /* background: rgb(0, 0, 0); */
+  background-color: rgb(0, 229, 255);
 }
 
 .sale_Order_Form_Header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-bottom: 10px;
-}
-
-.sale_Order_Form_Header > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-h5 {
-  margin: 5px;
-}
-
-.two_by_two {
-  display: flex;
-  justify-content: start;
-}
-
-.two_by_two > div {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-
-.sale_Order_Form_Header > div > input {
-  height: 30px;
-  border: 0.5px solid black;
-  /* outline: 1px solid black; */
-  border-radius: 5px;
-}
-
-.formToAdd {
-  display: flex;
-  flex-direction: column;
-}
-button {
-  position: absolute;
-  right: 100px;
-  bottom: 10px;
+  background-color: red;
 }
 
 .mainContainer {
   width: 100vb;
-  /* background-color: red; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,27 +33,30 @@ button {
 .dropdown {
   height: 70vh;
   overflow-y: scroll;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.top {
+/* .top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+} */
 
-.left {
+/* .left {
   display: flex;
   gap: 5px;
-}
+} */
 
-.right {
+/* .left and top affecting table */
+
+/* .right {
   padding: 2px 5px;
   background-color: rgb(224, 224, 224);
   border-radius: 5px;
-}
+} */
 
 hr {
   margin: 0;
@@ -133,6 +97,5 @@ hr {
   padding: 2px 4px;
   color: rgb(0, 92, 0);
   background-color: rgb(105, 248, 119);
-  /* border: 3px soild forestgreen; */
   border-radius: 10px;
 }

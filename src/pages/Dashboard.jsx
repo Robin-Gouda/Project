@@ -30,8 +30,6 @@ const Dashboard = () => {
       <Navbar />
       <main>
         <div className="right">
-          <h2>Dashboard</h2>
-
           <Button
             size="md"
             height="48px"
@@ -52,7 +50,7 @@ const Dashboard = () => {
                 <Tab className="tab">Completed Sales Order</Tab>
               </TabList>
               <TabPanels>
-                <TabPanel>
+                <TabPanel className="tabpanel">
                   <ActiveSalesOrder />
                 </TabPanel>
                 <TabPanel>
@@ -63,9 +61,11 @@ const Dashboard = () => {
           </div>
         </div>
       </main>
-      <Button colorScheme="teal" variant="solid" onClick={handleLogout}>
-        Logout
-      </Button>
+      <div className="footerDashboard">
+        <Button colorScheme="teal" variant="solid" onClick={handleLogout}>
+          Logout
+        </Button>
+      </div>
     </div>
   );
 };

@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import { BsThreeDots } from "react-icons/bs";
+import "./css/activeSaleOrder.css";
 import {
   Table,
   Thead,
@@ -14,7 +17,8 @@ import {
 
 const ActiveSalesOrder = () => {
   const [salesData, setSalesData] = useState([]);
-
+  const [customerData, setCustomerData] = useState([]);
+  const navigate = useNavigate();
   const fetchData = async () => {
     try {
       const response = await axios.get("http://localhost:3005/saleOrder");
@@ -32,6 +36,14 @@ const ActiveSalesOrder = () => {
     } catch (error) {
       console.error("Error fetching sales data:", error);
     }
+
+    try {
+      const response = await axios.get("http://localhost:3003/customerSchema");
+      setCustomerData(response.data);
+      console.log(customerData);
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   useEffect(() => {
@@ -39,7 +51,7 @@ const ActiveSalesOrder = () => {
     fetchData();
 
     // Set up interval to fetch data every 5 seconds
-    const intervalId = setInterval(fetchData, 5000);
+    const intervalId = setInterval(fetchData, 50000);
 
     // Clean up interval on component unmount
     return () => clearInterval(intervalId);
@@ -47,7 +59,6 @@ const ActiveSalesOrder = () => {
 
   return (
     <div>
-      <h1>Sales Orders</h1>
       <TableContainer>
         <Table variant="simple">
           <Thead>
@@ -66,7 +77,15 @@ const ActiveSalesOrder = () => {
                 <Td>{order.customerId}</Td>
                 <Td>{order.totalPrice.toFixed(2)}</Td>
                 <Td>{order.invoiceDate}</Td>
-                <Td>...</Td>
+                <Td className="choicelink">
+                  <a
+                    className="linkButton"
+                    onClick={() => navigate("/sale-order-form")}
+                  >
+                    ooo
+                    {/* <BsThreeDots /> */}
+                  </a>
+                </Td>
               </Tr>
             ))}
           </Tbody>

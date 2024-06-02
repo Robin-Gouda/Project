@@ -22,29 +22,38 @@ const LoginPage = () => {
   return (
     <div className="loginForm">
       <div className="container">
-        <h2>Login</h2>
-        <div className="theform">
-          <form onSubmit={handleLogin}>
-            <div>
-              <label>Username:</label>
-              <input
-                type="text"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-              />
-            </div>
-            <div>
-              <label>Password:</label>
-              <input
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </div>
-            {error && <p style={{ color: "red" }}>{error}</p>}
-            <button type="submit">Login</button>
-          </form>
+        <div className="header">
+          <h2>Login Form</h2>
         </div>
+        <div className="main">
+          <div className="theform">
+            <form onSubmit={handleLogin}>
+              <div>
+                <label>Username:</label>
+                <input
+                  type="text"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                  className="inputting"
+                  placeholder="Username is user1"
+                />
+              </div>
+              <div>
+                <label>Password:</label>
+                <input
+                  type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  className="inputting"
+                  placeholder="Password is password1"
+                />
+              </div>
+              {error && <p style={{ color: "red" }}>{error}</p>}
+              <button type="submit">Login</button>
+            </form>
+          </div>
+        </div>
+        <div className="footer"></div>
       </div>
     </div>
   );
